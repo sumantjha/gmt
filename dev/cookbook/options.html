@@ -1573,10 +1573,13 @@ levels of objects. The <strong>-t</strong> option allows you to change the
 transparency level for the current overlay by appending a percentage in
 the 0-100 range; the default is 0, or opaque. Transparency may also be
 controlled on a feature by feature basis when setting color or fill (see
-section <a class="reference internal" href="features.html#gfill-attrib"><span class="std std-ref">Specifying area fill attributes</span></a>).  Finally, the modules
+section <a class="reference internal" href="features.html#gfill-attrib"><span class="std std-ref">Specifying area fill attributes</span></a>).  For separate transparency for fill and stroke,
+append /<em>transp2</em> as well. <strong>Note</strong>: The modules
 <a class="reference internal" href="../plot.html"><span class="doc">plot</span></a>, <a class="reference internal" href="../plot3d.html"><span class="doc">plot3d</span></a>, and <a class="reference internal" href="../text.html"><span class="doc">text</span></a> can all change transparency
 on a record-by-record basis if <strong>-t</strong> is given without argument and the
-input file supplies variable transparencies as the last numerical column value.</p>
+input file supplies variable transparencies as the last numerical column value(s).
+Use the <strong>+f</strong> and <strong>+s</strong> modifiers to indicate which transparency is provided
+or if we expect one or two transparencies.</p>
 </div>
 <div class="section" id="selecting-number-of-cpu-cores-the-x-option">
 <span id="option-x-core"></span><h2><span class="section-number">4.25. </span>Selecting number of CPU cores: The <strong>-x</strong> option<a class="headerlink" href="#selecting-number-of-cpu-cores-the-x-option" title="Permalink to this headline">¶</a></h2>
@@ -1661,7 +1664,7 @@ context they are considered “other”. Thus, when we refer to
         
         &copy; Copyright 2020, The GMT Team.
       <span class="lastupdated">
-        Last updated on Dec 02, 2020.
+        Last updated on Dec 09, 2020.
       </span>
 
     </p>

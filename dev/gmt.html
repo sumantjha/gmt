@@ -1252,7 +1252,10 @@ if appended to the first <strong>-l</strong> option, affects the legend width (u
 just subdivides the available width among the specified columns.
 The upper-case modifiers reflect legend codes described in <a class="reference internal" href="legend.html"><span class="doc">legend</span></a>, which provide more details and
 customization.  If <strong>legend</strong> is not called explicitly we will call it implicitly when finishing the plot
-via <a class="reference internal" href="end.html"><span class="doc">end</span></a>.</p>
+via <a class="reference internal" href="end.html"><span class="doc">end</span></a>.  <strong>Note</strong>: If auto-coloring is used for pens or fills and <strong>-l</strong> is set then <em>label</em> may
+contain a C-format for integers (e.g., %3.3d) or just # and we will use the sequence number
+with the format to build the label entries.  Alternatively, give a list of comma-separated labels, or give
+no label if your segment headers contain label settings.</p>
 </dd>
 </dl>
 <dl class="simple" id="n-full">
@@ -1623,7 +1626,7 @@ GMT documentation site <a class="reference external" href="https://docs.generic-
         
         &copy; Copyright 2020, The GMT Team.
       <span class="lastupdated">
-        Last updated on Dec 02, 2020.
+        Last updated on Dec 09, 2020.
       </span>
 
     </p>
